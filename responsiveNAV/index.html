@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<!-- Navigation bar -->  
+    <nav>
+    
+<!-- Side bar -->    
+    <ul class="sidebar">
+        <li onclick=hideSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">forum</a></li>
+    </ul>
+
+<!-- Full screen nav bar -->    
+    <ul>
+        <li><a href="#">Simon Garry</a></li>
+        <li class="hideOnMobile"><a href="#">about</a></li>
+        <li class="hideOnMobile"><a href="#">contact</a></li>
+        <li class="hideOnMobile"><a href="#">blog</a></li>
+        <li class="hideOnMobile"><a href="#">forum</a></li>
+        <li class="menu-button" onclick=showSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+
+    <!-- Javascript -->    
+<script>
+    function showSideBar(){
+        const siderbar = document.querySelector('.sidebar')
+        siderbar.style.display = 'flex'
+    }
+    function hideSideBar(){
+        const siderbar = document.querySelector('.sidebar')
+        siderbar.style.display = 'none'
+    }
+</script>
+
+</nav>
+
+</body>
+</html>
+<!--  -->
